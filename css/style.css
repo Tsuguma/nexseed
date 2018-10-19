@@ -121,25 +121,24 @@ header{
 	margin-top: 50px;
 	background-color: #ebf4f5;
 }
-.sub-title{
+.sub-title2{
 	text-align: center;
 	font-size: 36px;
 }
-.form{
-	margin: 50px 0 40px;
+.contact .form{
+	margin:50px 0 40px;
 	display: flex;
 	justify-content: center;
 }
-
-.form-left: {
+.form-left{
 	margin-right: 50px;
 }
 .form .name,
-.form .email {
+.form .email{
 	height: 50px;
 	width: 400px;
-	font-size: 16px;
 	box-sizing: border-box;
+	font-size: 16px;
 }
 .form .name{
 	margin-bottom: 20px;
@@ -151,18 +150,19 @@ header{
 	font-size: 16px;
 }
 .contact button{
-	background-color: #1dace0 ;
-	color:#fff;
-	border: 5px solid #1dace0 ;
+	background-color: #000000;
+	color: #fff;
+	border:3px solid #000000;
+	border-radius: 10px;
 	font-size: 24px;
 	padding: 15px 30px;
-	border-radius: 10px;
-	box-sizing: border-box;	
-	transition-duration: 500ms;
-} 
+    box-sizing: border-box;
+    transition-duration: 500ms;
+    cursor: pointer;
+}
 .contact button:hover{
 	background-color: #fff;
-	color: ##1dace0;
+	color: gray;
 	transition-duration: 500ms;
 }
 footer{
@@ -202,6 +202,42 @@ footer{
 }
 
 @media screen and (max-width: 960px) {
+    .contact{
+    	height: 100%;
+    	padding:40px 0;
+	
+    }
+    .sub-title2{
+	
+    }
+    .contact .form{
+    	flex-direction: column;
+    }
+    .form-left{
+	    margin-right: 0;
+	    margin-left: 30px;
+    }
+    .form .name,
+    .form .email{
+	    width: 80%;
+    }
+    .form .name{
+	
+    }
+    .form .inquiry{
+    	width: 80%;
+	
+    }
+    .contact button{
+    	font-size: 20px;
+    	padding: 5px 40px;
+	
+    }
+    .contact button:hover{
+    } 
+}
+
+
 
 }
 
