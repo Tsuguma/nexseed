@@ -114,12 +114,12 @@ header{
 }
 .contact{
 	display: flex;
-	flex-direction: column;
-	text-align: center;
-	justify-content: center;
-	height: 350px;
-	margin-top: 50px;
-	background-color: #ebf4f5;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 350px;
+    margin-top: 50px;
+    background-color: #ebf4f5;
 }
 .sub-title2{
 	text-align: center;
@@ -150,20 +150,18 @@ header{
 	font-size: 16px;
 }
 .contact button{
-	background-color: #000000;
-	color: #fff;
-	border:3px solid #000000;
-	border-radius: 10px;
-	font-size: 24px;
-	padding: 15px 30px;
+    background-color: #1dace0;
+    color: #fff;
+    border: 3px solid #1dace0;
+    border-radius: 10px;
+    font-size: 24px;
+    padding: 15px 30px;
     box-sizing: border-box;
-    transition-duration: 500ms;
-    cursor: pointer;
 }
 .contact button:hover{
-	background-color: #fff;
-	color: gray;
-	transition-duration: 500ms;
+    background-color: #fff;
+    color: #1dace0;
+    transition-duration: 500ms;
 }
 footer{
 	display: flex;
@@ -202,45 +200,97 @@ footer{
 }
 
 @media screen and (max-width: 960px) {
-    .contact{
-    	height: 100%;
-    	padding:40px 0;
-	
+    .contact {
+         height: 100%;
+         padding: 40px 0;
+     }
+
+    .contact .form {
+         flex-direction: column;
+         margin: 30px 0;
     }
-    .sub-title2{
-	
+
+    .form .name, 
+    .form .email {
+         width: 80%;
     }
-    .contact .form{
+
+    .form-left {
+         margin-right: 0;
+         margin-bottom: 30px;
+    }
+
+    .form .inquiry {
+         width: 80%;
+    }
+
+    .contact button {
+        font-size: 20px;
+        padding: 5px 40px;
+    }
+    
+}
+
+
+@media screen and (max-width: 480px) {
+	.icon span {
+		display: none;
+	}
+	.icon {
+		margin-left: 20px
+	}
+	.header-right {
+		display: none;
+	}
+	.title{
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+	.guidline{
+		font-size: 20px;
+		font-weight: normal;
+	}
+	.btn-group{
+		margin-top: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.btn {
+		margin-left: 0;
+		margin-top: 15px;
+		height: 48px;
+		width: 140px;
+		font-size: 20px;
+    }
+	.btn:first-child{
+		margin-top: 0;
+	}
+    .img-box {
     	flex-direction: column;
+    	align-items: center;
     }
-    .form-left{
-	    margin-right: 0;
-	    margin-left: 30px;
+    .img-box li{
+    	margin-right: 0;
+    }
+    .img-box li span{
+    	font-size: 20px;
+    }
+
+    .contact h2 {
+    	font-size: 24px;    	
     }
     .form .name,
     .form .email{
-	    width: 80%;
+    	height: 30px;
     }
-    .form .name{
-	
-    }
-    .form .inquiry{
-    	width: 80%;
-	
-    }
-    .contact button{
-    	font-size: 20px;
-    	padding: 5px 40px;
-	
-    }
-    .contact button:hover{
-    } 
-}
 
-
-
-}
-
-@media screen and (max-width: 480px) {
+	footer .icontwo{
+		display: none;
+	}
+	.footer-right{
+		display: block;
+		margin: 0 auto;
+	}
 
 }
